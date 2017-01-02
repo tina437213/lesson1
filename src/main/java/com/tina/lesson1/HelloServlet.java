@@ -10,7 +10,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-/**
+/*
  * Created by tina on 2016/10/16.
  */
 
@@ -22,7 +22,5 @@ public class HelloServlet extends HttpServlet{
         String currentTime = dateFormat.format(new Date());
         req.setAttribute("currentTime",currentTime);
         req.getRequestDispatcher("/WEB-INF/jsp/hello.jsp").forward(req,resp);
-        System.out.println("test for git");
-        System.out.println("test for git2------");
     }
 }
